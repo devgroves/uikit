@@ -8,8 +8,8 @@ const Services = () => {
       <div className="uk-container">
         <div 
           className="uk-flex uk-flex-between uk-flex-middle" 
-          uk-grid
-          uk-margin-medium-top
+          uk-grid="true"
+          uk-margin-medium-top="true"
           style={{
             flexDirection: window.innerWidth >= 960 ? 'row' : 'column'
           }}

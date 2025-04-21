@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { useForm } from 'react-hook-form';
-
+import UIkit from 'uikit';
 const Contact = () => {
    const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
-    
+    UIkit.notification({
+    message: 'Successfully registered!',
+    status: 'success',
+    timeout: 3000
+  });
+  setTimeout(() => {
+    window.location.reload();
+  }, 3000);
   };
   return (
       <section id="contact" className="uk-section"style={{ paddingTop: '40px' }} >
@@ -16,8 +23,8 @@ const Contact = () => {
         
         <div 
           className="uk-flex uk-flex-between uk-flex-middle" 
-          uk-grid
-          uk-margin-medium-top
+          uk-grid="true"
+          uk-margin-medium-top="true"
           style={{
             flexDirection: window.innerWidth >= 960 ? 'row' : 'column'
           }}
@@ -58,7 +65,7 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="uk-grid-small" uk-grid>
+              <div className="uk-grid-small" uk-grid="true">
                 <div className="uk-width-1-2@s">
                   <div className="uk-margin">
                     <label className="uk-form-label">Contact number</label>
@@ -66,9 +73,11 @@ const Contact = () => {
                       <input 
                         className="uk-input" 
                         type="tel" 
-                        {...register("phone", { required: true })}
+                        {...register("phone", { required: true,
+                           pattern: /^[0-9]{10}$/
+                         })}
                       />
-                      {errors.phone && <span className="uk-text-danger">This field is required</span>}
+                      {errors.phone && <span className="uk-text-danger">Enter a valid 10-digit mobile number</span>}
                     </div>
                   </div>
                 </div>
@@ -108,9 +117,9 @@ const Contact = () => {
                   <textarea 
                     className="uk-textarea" 
                     rows="5" 
-                    {...register("message", { required: true })}
+                    {...register("message")}
                   ></textarea>
-                  {errors.message && <span className="uk-text-danger">This field is required</span>}
+                 
                 </div>
               </div>
               

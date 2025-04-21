@@ -41,3 +41,34 @@ html {
   padding-bottom: 3px !important;
 }
 
+.uk-container-expand {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.uk-navbar-toggle {
+  min-height: 30px !important;
+width: 40px;
+}
+
+.uk-navbar-toggle-icon {
+  height: 20px !important;
+}
+
+.uk-navbar-toggle-icon::before,
+.uk-navbar-toggle-icon::after {
+  height: 2px;
+  /* Adjust the bar thickness */
+}
+@media (max-width: 960px) {
+  .uk-navbar-nav {
+    display: none;
+  }
+
+  .uk-offcanvas-bar {
+    width: 30% !important;
+    background-color: #609fa1 !important;
+    
+  }
+   
+}

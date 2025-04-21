@@ -9,8 +9,8 @@ const Hero = () => {
         
         <div 
           className="uk-flex uk-flex-between uk-flex-middle" 
-          uk-grid
-          uk-margin-medium-top
+         uk-grid="true"
+          uk-margin-medium-top="true"
           style={{
             flexDirection: window.innerWidth >= 960 ? 'row' : 'column'
           }}
@@ -30,7 +30,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div className="uk-width-1-2@m uk-width-1-1">
+          <div className="uk-width-1-2@m uk-width-1-1" uk-margin-medium-top="true">
             <div>
               <h1 className="uk-heading-small" style={{ fontSize: '1.8rem', lineHeight: '1.3' }}>DevGroves is a  dev community synergized to build performance efficient technical solutions.</h1>
                <p className="uk-text-default" style={{ fontSize: '1rem', marginTop: '15px' }}>
