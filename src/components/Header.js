@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="uk-navbar-container" data-uk-sticky="top: 100; animation: uk-animation-slide-top">
       <div className="uk-container uk-container-expand">
-        <nav className="uk-navbar" data-uk-navbar>
+        <nav className="uk-navbar" data-uk-navbar style={{ margin:'0 110px'}}>
           <div className="uk-navbar-left">
             <div className="uk-navbar-item">
               <img 
