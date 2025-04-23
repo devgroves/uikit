@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-
+import { useWindowSize } from '../hooks/useWindowSize';
 const Team = () => {
+  const { width } = useWindowSize();
   return (
   <section id="About" className="uk-section"style={{ paddingTop: '40px' }} >
       
@@ -12,7 +13,7 @@ const Team = () => {
           uk-grid="true"
           uk-margin-medium-top="true"
           style={{
-            flexDirection: window.innerWidth >= 960 ? 'row' : 'column'
+            flexDirection: width >= 960 ? 'row' : 'column'
           }}
         >
           <div className="uk-width-1-2@m uk-width-1-1">

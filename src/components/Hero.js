@@ -1,18 +1,17 @@
 import React from 'react';
-
+import { useWindowSize } from '../hooks/useWindowSize';
 const Hero = () => {
+  const { width } = useWindowSize();
   return (
     
-    <section id="hero" className="uk-section"style={{ paddingTop: '40px' }} >
-      
+    <section id="hero" className="uk-section"style={{ paddingTop: '40px' }} > 
       <div className="uk-container">
-        
         <div 
           className="uk-flex uk-flex-between uk-flex-middle" 
          uk-grid="true"
           uk-margin-medium-top="true"
           style={{
-            flexDirection: window.innerWidth >= 960 ? 'row' : 'column'
+            flexDirection: width >= 960 ? 'row' : 'column'
           }}
         >
           

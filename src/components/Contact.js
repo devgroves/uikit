@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { useForm } from 'react-hook-form';
 import UIkit from 'uikit';
+import { useWindowSize } from '../hooks/useWindowSize';
 const Contact = () => {
+  const { width } = useWindowSize();
    const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
@@ -25,8 +27,8 @@ const Contact = () => {
           className="uk-flex uk-flex-between uk-flex-middle" 
           uk-grid="true"
           uk-margin-medium-top="true"
-          style={{
-            flexDirection: window.innerWidth >= 960 ? 'row' : 'column'
+           style={{
+            flexDirection: width >= 960 ? 'row' : 'column'
           }}
         >
        
