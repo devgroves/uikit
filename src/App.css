@@ -60,7 +60,13 @@ width: 40px;
   height: 2px;
   /* Adjust the bar thickness */
 }
-@media (max-width: 960px) {
+
+@media (min-width: 960px) {
+  .responsive-layout {
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 959px) {
   .uk-navbar-nav {
     display: none;
   }
@@ -70,5 +76,8 @@ width: 40px;
     background-color: #609fa1 !important;
     
   }
+    .responsive-layout {
+      flex-direction: column !important;
+    }
    
 }
