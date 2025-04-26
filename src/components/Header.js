@@ -9,11 +9,12 @@ const Header = () => {
           <div className="uk-navbar-left">
             <div className="uk-navbar-item">
               <img 
-                src="https://devgrovestechnologies.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d45a006c.png&w=128&q=75" 
+                src="./devgroves.png" 
                 alt="DevGroves Logo"
                 className="uk-logo"
                 style={{ 
-                  height: '40px',
+                  height: '70px',
+                  width: '200px',
                   transition: 'transform 0.3s ease'
                 }}
                 onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
