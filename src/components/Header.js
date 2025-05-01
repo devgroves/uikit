@@ -10,10 +10,10 @@ const Header = () => {
             <div className="uk-navbar-left">
               <div className="uk-navbar-item">
                 <img 
-                  src="https://devgrovestechnologies.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d45a006c.png&w=128&q=75" 
+                  src="./devgroves.png" 
                   alt="DevGroves Logo"
                   className="uk-logo"
-                  style={{ height: '40px', transition: 'transform 0.3s ease' }}
+                  style={{ height: '60px', transition: 'transform 0.3s ease' }}
                   onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
                   onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 />
@@ -48,11 +48,11 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <section className="uk-section uk-section-small uk-background-primary uk-light">
+      <section className="uk-section uk-section-small uk-background-primary uk-light" style={{backgroundColor: 'darkslategray'}}>
         <div className="uk-container">
           <div className="uk-text-center">
             <h1 className="uk-heading-medium">DevGroves Technologies</h1>
-            <p className="uk-text-lead">Innovative Technical Solutions for Modern Businesses</p>
+            <p className="uk-text-lead">We develop website! You manage the site as per new business needs!! </p>
           </div>
         </div>
       </section>

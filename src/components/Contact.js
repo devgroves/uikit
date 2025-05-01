@@ -31,28 +31,13 @@ const Contact = () => {
             flexDirection: width >= 960 ? 'row' : 'column'
           }}
         >
-       
-          <div className="uk-width-1-2@m uk-width-1-1">
-            <div className="uk-text-center">
-              <img 
-                src="https://devgrovestechnologies.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontactus.e52b99de.png&w=1200&q=75" 
-                alt="DevGroves Technologies"
-                className="uk-border-rounded uk-box-shadow-medium"
-                style={{ 
-                  maxWidth: '100%',
-                 objectFit: 'contain',
-                  maxHeight: '350px'
-                }}
-              />
-            </div>
-          </div>
 
-       
           <div className="uk-width-1-2@m uk-width-1-1">
+          <p class="uk-description-list-line" style={{ marginBottom: '0', color: '#ff7607', fontWeight: '500'}}>Contact Us</p>
                        <form onSubmit={handleSubmit(onSubmit)} className="uk-form-stacked">
-              
+                       
               <div className="uk-margin">
-                <label className="uk-form-label">Please share a minute to fill in..</label>
+                <label className="uk-form-label" style={{ fontWeight: 'bolder'}}>If you are interested to talk to us, Please share a minute to fill in..</label>
               </div>
               
               <div className="uk-margin">
@@ -132,6 +117,24 @@ const Contact = () => {
               </div>
             </form>
           </div>
+       
+          <div className="uk-width-1-2@m uk-width-1-1">
+            <div className="uk-text-center">
+              <img 
+                src="https://devgrovestechnologies.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontactus.e52b99de.png&w=1200&q=75" 
+                alt="DevGroves Technologies"
+                className="uk-border-rounded uk-box-shadow-medium"
+                style={{ 
+                  maxWidth: '100%',
+                 objectFit: 'contain',
+                  maxHeight: '350px'
+                }}
+              />
+            </div>
+          </div>
+
+       
+          
         </div>
       </div>
         <div className="uk-divider-icon"></div>
